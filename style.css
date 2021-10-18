@@ -1,0 +1,343 @@
+/* ---GUIA
+
+--TIPOGRAFIA
+font-family: 'Domine', serif;
+font-family: 'Inter', sans-serif;
+
+--COLORES
+blanco: #FAFAFA;
+negro: #0E0E0E;
+gris: #252424;
+primario: #EE5E0B;
+
+*/
+
+:root {
+	--clr-negro: #0e0e0e;
+	--clr-gris-claro: #f7f8f9;
+	--clr-gris-oscuro: #535353;
+	--clr-blanco: #ffffff;
+	--clr-primary: #e63f0d;
+	--font-headings: "Montserrat", sans-serif;
+	--font-body: "Roboto", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	color: inherit;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: var(--font-body);
+}
+
+/* FIX PARA IMAGENES */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ---TEXTO GENERAL--- */
+
+h1,
+h2,
+h3 {
+	font-family: var(--font-headings);
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p,
+a,
+input,
+select,
+textarea,
+button {
+	font-family: var(--font-body);
+	font-size: 0.9rem;
+}
+
+/* ---ESTILOS DE TEXTO--- */
+span.highlight-primary {
+	color: var(--clr-primary);
+}
+
+span.bolder {
+	font-weight: 800;
+}
+
+span.brand {
+	font-weight: 800;
+}
+
+.logo {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2.75rem;
+	letter-spacing: 0.05em;
+}
+
+.tooltip {
+	font-size: 0.9em;
+	color: var(--clr-gris-oscuro);
+}
+/* COMPONENTES */
+.btn {
+	display: inline-block;
+	border: 1px solid var(--clr-primary);
+	padding: 0.7em 1.75em;
+	border-radius: 0.25em;
+	cursor: pointer;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.btn-primary {
+	background: var(--clr-primary);
+	color: var(--clr-blanco);
+	font-weight: 400;
+}
+
+.btn-line {
+}
+
+.btn-sm {
+	padding: initial;
+	padding: 0.5em 1em;
+}
+
+/* UTILIDADES */
+.pd-x2 {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* ---HEADER Y FOOTER--- */
+header,
+footer {
+	padding-top: 1.5em;
+	padding-bottom: 1.75em;
+}
+
+header {
+	z-index: 1;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: var(--clr-blanco);
+}
+
+header .location {
+}
+
+header .logo {
+}
+
+header .account {
+}
+
+header .account > *:first-child {
+	margin-right: 1em;
+}
+
+footer {
+	background: var(--clr-negro);
+	color: var(--clr-blanco);
+}
+
+footer .sm {
+}
+
+footer .icon-sm {
+	font-size: 2rem;
+	display: inline-block;
+}
+
+footer .icon-sm:not(:last-of-type) {
+	margin-right: 0.5em;
+}
+
+footer .mobilestore {
+}
+
+footer .mobilestore > *:first-child {
+	margin-right: 1em;
+}
+
+footer .copyright {
+}
+
+/* ---- INDEX.HTML ---- */
+
+/* Hero Section */
+.hero {
+	height: calc(100vh - 114px);
+	background: url(./hero-four-people-eating-at-a-table.jpg) no-repeat center/cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.hero-txt {
+	background: rgba(255, 255, 255, 0.98);
+	width: 90vw;
+	max-width: 650px;
+	padding: 1.5em 10% 2em;
+	border-radius: 0.5em;
+}
+
+.hero-txt h1 {
+	margin-bottom: 0.75em;
+	text-align: center;
+}
+
+.hero-txt .hero-form {
+}
+
+.hero-txt form {
+	background: var(--clr-blanco);
+	border: 1px solid var(--clr-negro);
+	padding: 0.5em;
+	border-radius: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.hero-txt input {
+	border: none;
+	outline: none;
+	padding: 0.25em;
+}
+
+.hero-txt button {
+}
+
+/* Secciones */
+.container-section {
+	padding-top: 3.75em;
+	padding-bottom: 2em;
+	background: var(--clr-gris-claro);
+}
+
+.container-section .section-heading {
+	text-align: center;
+	margin-bottom: 0.75em;
+}
+
+/* CARDS */
+.container-card {
+	width: 100%;
+}
+
+.card {
+	text-align: center;
+	background: var(--clr-blanco);
+	padding: 1em;
+	margin-bottom: 2em;
+	border-radius: 0.5em;
+}
+
+.card-img {
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+
+.card-txt {
+	padding: 1.75em;
+}
+
+.card-txt h3 {
+}
+
+.card-txt p {
+	margin: 1em 0 1.25em;
+}
+
+.card-txt .btn {
+}
+
+/* FLEX Y GRID PROPERTIES */
+.flex-sb {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-sb > *:first-child {
+	flex: 1 0;
+}
+
+.flex-sb > *:last-child {
+	flex: 1 0;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+}
+
+.flex-col-c {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px;
+}
+
+.flex-row:first-of-type {
+	flex-direction: row-reverse;
+}
+
+.flex-row > *:last-of-type {
+	flex: 1;
+	text-align: left;
+}
+
+.flex-row > *:first-child {
+}
+
+.grid-c {
+	display: grid;
+	place-content: center;
+}
+.flex-form {
+	display: flex;
+}
+
+.flex-form > *:nth-child(2) {
+	flex: 1 0 auto;
+}
