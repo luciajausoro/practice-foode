@@ -307,6 +307,12 @@ footer .copyright {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
+}
+
+.flex-col-c2 {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -334,6 +340,7 @@ footer .copyright {
 	display: grid;
 	place-content: center;
 }
+
 .flex-form {
 	display: flex;
 }
